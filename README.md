@@ -1,8 +1,8 @@
-# *3rd React App!*
+# *1st fully react based frontend project!*
 
 </br>
 
-### After 2nd react handson this one is made to understand and implement context api and data manipulation in routed components.
+### This project helps to get familiarized with basic reactjs, and helps to understand how react is useful when creating such blog sites.
 
 </br>
 

@@ -1,0 +1,21 @@
+/* Header Component */
+
+.header {
+	text-align: center;
+	/* margin-top: 50px; */
+	font: normal normal bold 71px/87px Montserrat;
+}
+.header p {
+	display: inline-block;
+	font-size: 25px;
+	color: #0d0d0d;
+	font-weight: light;
+	margin-right: 10px;
+	transform: rotate(-90deg);
+}
+.header h1 {
+	display: inline-block;
+	font-weight: bolder;
+	color: #0d0d0d;
+	font-size: 40px;
+}

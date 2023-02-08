@@ -1,0 +1,39 @@
+.nav-list {
+	margin-top: 15px;
+	display: flex;
+	justify-content: space-evenly;
+	list-style-type: none;
+	font: 18px/22px Montserrat;
+}
+.nav-list li {
+	font-size: 1.2em;
+	margin: 10px 60px;
+	color: #0d0d0d;
+	transition: all 0.2s ease-in-out;
+}
+.nav-list li:hover {
+	transform: scale(1.3);
+}
+
+.nav-list a {
+	text-decoration: none;
+	color: black;
+}
+
+li .active-nav {
+	background-color: black;
+	color: white;
+	padding: 3px;
+	border-radius: 5px;
+}
+
+.hr-div {
+	margin-left: 2rem;
+	height: 2px;
+	width: 89%;
+	background-color: gray;
+}
+
+nav {
+	margin-bottom: 3rem;
+}

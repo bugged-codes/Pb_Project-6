@@ -23,4 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 /6th-Project.code-workspace
-/Notes.txt
+# /Notes.txt
+src2/

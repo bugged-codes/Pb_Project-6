@@ -1,13 +1,17 @@
-import React from "react";
-import MasterRoutes from "./components/navigation/MasterRoutes";
-import Navbar from "./components/navigation/Navbar";
+import React from 'react';
+import FooterComp from './components/FooterComp';
+import Header from './components/Header';
+import MasterRoutes from './components/navigation/MasterRoutes';
+import Navbar from './components/navigation/Navbar';
 
 function App() {
 	return (
-		<div>
+		<>
+			<Header />
 			<Navbar />
 			<MasterRoutes />
-		</div>
+			<FooterComp />
+		</>
 	);
 }
 export default App;

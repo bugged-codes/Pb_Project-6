@@ -1,0 +1,6 @@
+1. Make Empty Pages.
+2. Create MasterRouting.
+3. Create Navbar.
+5. Create Reusable components for cards.
+6. Create dummy context data.
+7. Provide contextData to each page and card component.
