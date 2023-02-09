@@ -1,0 +1,13 @@
+/* * Bollywood * */
+.pages {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+.page-heading {
+	text-align: center;
+	margin-bottom: 2rem;
+}

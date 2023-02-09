@@ -19,3 +19,15 @@
 	color: #0d0d0d;
 	font-size: 40px;
 }
+
+/* * Footer Component * */
+.footer {
+	background-color: black;
+	margin-top: 1rem;
+	color: white;
+}
+
+/* * Sidebar Component * */
+.sidebar {
+	margin-top: 2rem;
+}

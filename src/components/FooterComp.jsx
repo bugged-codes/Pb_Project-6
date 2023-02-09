@@ -1,8 +1,12 @@
 import React from 'react';
-import './Components.css';
+import '../styling/Components.css';
 
 const FooterComp = () => {
-	return <div>This is footer.</div>;
+	return (
+		<div className="footer">
+			<center>This is footer.</center>
+		</div>
+	);
 };
 
 export default FooterComp;
