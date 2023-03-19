@@ -4,9 +4,10 @@ import Home from '../../pages/Home';
 import Bollywood from '../../pages/Bollywood';
 import Hollywood from '../../pages/Hollywood';
 import Technology from '../../pages/Technology';
-import Fashion from '../../pages/Fashion';
+import Travel from '../../pages/Travel';
 import Food from '../../pages/Food';
 import DataContext from '../../data/DataContext';
+import FocusedPage from '../../pages/FocusedPage';
 
 const MasterRoutes = () => {
 	return (
@@ -16,8 +17,9 @@ const MasterRoutes = () => {
 				<Route path="/Bollywood" element={<Bollywood />} />
 				<Route path="/Hollywood" element={<Hollywood />} />
 				<Route path="/Technology" element={<Technology />} />
-				<Route path="/Fashion" element={<Fashion />} />
+				<Route path="/Travel" element={<Travel />} />
 				<Route path="/Food" element={<Food />} />
+				<Route path=":category/:articleid" element={<FocusedPage />} />
 			</Routes>
 		</DataContext>
 	);

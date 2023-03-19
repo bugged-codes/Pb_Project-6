@@ -1,6 +1,7 @@
 .nav-list {
 	margin-top: 15px;
 	display: flex;
+	flex-flow: row wrap;
 	justify-content: space-evenly;
 	list-style-type: none;
 	font: 18px/22px Montserrat;

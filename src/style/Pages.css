@@ -1,0 +1,113 @@
+/* * Home */
+.home-grid-container {
+	display: grid;
+	grid-template-columns: 342px 342px 20px 345px;
+	grid-template-rows: 190px 20px 190px;
+	width: 80%;
+	margin-inline: auto;
+}
+.home-grid-container a {
+	text-decoration: none;
+}
+.home-grid-img {
+	width: 345px;
+	height: 190px;
+	border-radius: 15px;
+}
+#home-grid-div-1 {
+	grid-area: 1/1 / span 2 / span 2;
+}
+#home-grid-div-2 {
+	grid-area: 1/4/2/5;
+}
+#home-grid-div-3 {
+	grid-area: 3/4/3/5;
+}
+#home-grid-img-1 {
+	width: 680px;
+	height: 400px;
+}
+#grid-heading-1 {
+	font-size: 2.5em;
+	bottom: 8rem;
+	left: 14rem;
+}
+.home-grid-blogs-heading {
+	position: relative;
+	z-index: 2;
+	color: white;
+	text-decoration-line: underline;
+	font-family: Montserrat;
+	bottom: 4rem;
+	left: 7rem;
+	font-weight: 600;
+	font-size: 1.5em;
+}
+.home-heading {
+	font-family: Montserrat;
+	margin-left: 6rem;
+	margin-top: 4rem;
+}
+
+.home-main-hr {
+	width: 25%;
+	border: none;
+	height: 1px;
+	background-color: grey;
+	margin-bottom: 4rem;
+}
+
+.home-latest-flex-container {
+	display: flex;
+	width: 70%;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+.home-latest-flex-container a {
+	text-decoration: none;
+	color: black;
+}
+
+/* * Bollywood * */
+.pages {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+.page-heading {
+	margin-bottom: 3rem;
+	font-family: Montserrat;
+	text-decoration: underline;
+	text-decoration-color: mediumvioletred;
+	margin-left: 25px;
+}
+
+/* * focused blog page */
+.focused-page {
+	margin: 50px 20%;
+	align-items: center;
+}
+.focused-page img {
+	width: 100%;
+	margin: 20px 0;
+	height: 500px;
+	border-radius: 15px;
+}
+.focusedPage-back-btn {
+	border-radius: 10px;
+	color: black;
+	font-size: 1.6em;
+	margin-inline: auto;
+	display: block;
+	cursor: pointer;
+	margin-top: 5rem;
+}
+.main-blog > h1 {
+	text-align: center;
+	font-family: Montserrat;
+}

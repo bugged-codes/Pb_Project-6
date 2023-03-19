@@ -1,31 +1,30 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../style/Components.css';
 
 const CardBig = (props) => {
-	console.log('card prop', props);
+	// console.log('Card props are: ', props);
+	const { imgUrl, title, description, articleid } = props;
 	return (
-		// <Link to="/DetailPage">
 		<div>
 			<Link
 				to={`${props.articleid}`}
 				state={{
-					title: props.title,
-					// img: props.imgUrl,
-					description: props.desc,
-					id: props.articleid,
+					title: title,
+					img: imgUrl,
+					description: description,
+					id: articleid,
 				}}
 			>
 				<div>
-					<div className="card__container">
-						<div className="card__image">
-							<img src={props.imgUrl} alt="React Logo" />
+					<div className="card__container cardBig">
+						<div className="card__image cardBig-img">
+							<img src={props.imgUrl} alt="React Logo" height={250} width={450} />
+							<h2 className="cardBig-title">{props.title}</h2>
 						</div>
-						<div className="bigcard__data">
-							<h5>{props.title}</h5>
-							<p>{props.description}....</p>
-						</div>
+						<p className="cardBig-desc">{props.description}....</p>
 					</div>
-					<hr style={{ fontWeigth: '40px', color: 'black' }} />
+					<hr className="cardBig-hr" />
 				</div>
 				{/* <img src="../data/logo.svg" alt="" /> */}
 			</Link>

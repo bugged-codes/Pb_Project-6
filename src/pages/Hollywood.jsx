@@ -3,7 +3,7 @@ import CardSmall from '../components/CardSmall';
 import CardBig from '../components/CardBig';
 import { context } from '../data/DataContext';
 import Sidebar from '../components/Sidebar';
-import '../styling/Pages.css';
+import '../style/Pages.css';
 
 const Hollywood = () => {
 	const [contextData] = useContext(context);
@@ -14,11 +14,11 @@ const Hollywood = () => {
 				<h1 className="page-heading">Hollywood</h1>
 				{contextData
 					.filter((post) => {
-						// console.log('Bollywood Cat: ', post.cat === 'Bollywood');
-						return post.cat === 'Hollywood';
+						// console.log('Bollywood Category: ', post.category === 'Bollywood');
+						return post.category === 'Hollywood';
 					})
 					.map((article) => {
-						return <CardBig key={article.id} articleId={article.id} title={article.title} imgUrl={article.img} description={article.des} />;
+						return <CardBig key={article.id} articleId={article.id} title={article.title} imgUrl={article.img} description={article.description.slice(0, 120)} />;
 					})}
 			</div>
 			<Sidebar />
