@@ -8,29 +8,17 @@ import HomeMainCard from '../components/HomeMainCard';
 import CardBig from '../components/CardBig';
 import '../style/Pages.css';
 import '../style/Components.css';
+import Sidebar from '../components/Sidebar';
 
 export default function Home() {
 	const [contextData] = useContext(context);
 	// const [] = useContext(store);
 	return (
 		<>
-			{/* <div className="Home">
-				<SmallCards img="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8VGVjaG5vbG9neXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" h1="Heading-1" para1="Para1" />
-				<Sidebar />
-				<div className="sidebar2">
-					{contextData
-						.filter((article) => {
-							return article.category === 'mix';
-						})
-						.map((item) => (
-							<CardSmall key={item.id} articleid={item.id} imgUrl={item.img} description={item.description.slice(0, 200)} title={item.title.slice(0, 25)} author={item.author} />
-						))}
-				</div>
-			</div> */}
 			<div className="Home">
-				<h1 className="page-heading" style={{ marginLeft: '5rem' }}>
+				{/* <h1 className="page-heading" style={{ marginLeft: '5.4rem' }}>
 					Home
-				</h1>
+				</h1> */}
 				<div className="home-grid-container">
 					<div id="home-grid-div-1">
 						{/* {console.log(
@@ -98,7 +86,7 @@ export default function Home() {
 								if (article.id >= 1 && article.id <= 3) return article.category === 'Bollywood';
 							})
 							.map((item) => (
-								<HomeMainCard key={item.id} articleid={item.id} imgUrl={item.img} title={item.title} description={item.description} author={item.author} category={item.category} />
+								<HomeMainCard key={item.id} articleId={item.id} imgUrl={item.img} title={item.title} description={item.description} author={item.author} category={item.category} />
 							))}
 					</div>
 					{/* <div id="home-tech-main" className="home-left home-latest-blogs">
@@ -108,7 +96,7 @@ export default function Home() {
 								if (article.id >= 13 && article.id <= 15) return article.category === 'Technology';
 							})
 							.map((item) => (
-								<HomeMainCard key={item.id} articleid={item.id} imgUrl={item.img} title={item.title} description={item.description.slice(0, 200)} author={item.author} category={item.category}/>
+								<HomeMainCard key={item.id} articleId={item.id} imgUrl={item.img} title={item.title} description={item.description} author={item.author} category={item.category}/>
 							))}
 					</div> */}
 					<div id="home-food-main" className="home-left home-latest-blogs">
@@ -118,10 +106,11 @@ export default function Home() {
 								if (article.id >= 19 && article.id <= 21) return article.category === 'Food';
 							})
 							.map((item) => (
-								<HomeMainCard key={item.id} articleid={item.id} imgUrl={item.img} title={item.title} description={item.description.slice(0, 200)} author={item.author} category={item.category} />
+								<HomeMainCard key={item.id} articleId={item.id} imgUrl={item.img} title={item.title} description={item.description} author={item.author} category={item.category} />
 							))}
 					</div>
 				</div>
+				<Sidebar text={'Space for Advertisement'} />
 				<h1 className="home-heading heading">Latest Articles</h1>
 
 				<h1 className="home-heading heading Top">Top Posts</h1>
@@ -133,7 +122,7 @@ export default function Home() {
 							return article.category === 'Travel';
 						})
 						.map((item) => (
-							<CardBig key={item.id} articleid={item.id} imgUrl={item.img} title={item.title} description={item.description.slice(0, 200)} author={item.author} />
+							<CardBig key={item.id} articleId={item.id} imgUrl={item.img} title={item.title} description={item.description} author={item.author} />
 						))}
 				</div>
 				<div className="sidebar2">
@@ -142,7 +131,7 @@ export default function Home() {
 							return article.category === 'mix';
 						})
 						.map((item) => (
-							<CardSmall key={item.id} articleid={item.id} imgUrl={item.img} description={item.description.slice(0, 200)} title={item.title.slice(0, 25)} author={item.author} />
+							<CardSmall key={item.id} articleId={item.id} imgUrl={item.img} description={item.description} title={item.title.slice(0, 25)} author={item.author} />
 						))}
 
 					<div className="advertisement">
@@ -160,7 +149,7 @@ export default function Home() {
 							return article.category === 'footer1';
 						})
 						.map((item) => (
-							<HomeMainCard key={item.id} articleid={item.id} imgUrl={item.img} title={item.title} description={item.description.slice(0, 200)} author={item.author} />
+							<HomeMainCard key={item.id} articleId={item.id} imgUrl={item.img} title={item.title} description={item.description} author={item.author} />
 						))}
 				</div>
 
@@ -170,7 +159,7 @@ export default function Home() {
 							return article.category === 'footer2';
 						})
 						.map((item) => (
-							<HomeMainCard key={item.id} articleid={item.id} imgUrl={item.img} title={item.title} description={item.description.slice(0, 200)} author={item.author} />
+							<HomeMainCard key={item.id} articleId={item.id} imgUrl={item.img} title={item.title} description={item.description} author={item.author} />
 						))}
 				</div>
 
@@ -180,7 +169,7 @@ export default function Home() {
 							return article.category === 'footer3';
 						})
 						.map((item) => (
-							<HomeMainCard key={item.id} articleid={item.id} imgUrl={item.img} title={item.title} description={item.description.slice(0, 200)} author={item.author} />
+							<HomeMainCard key={item.id} articleId={item.id} imgUrl={item.img} title={item.title} description={item.description} author={item.author} />
 						))}
 				</div>
 			</div>

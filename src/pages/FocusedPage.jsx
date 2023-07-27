@@ -5,7 +5,7 @@ import '../style/Pages.css';
 
 function FocusedPage() {
 	const location = useLocation();
-	const { title, articleId } = location.state;
+	const { id } = location.state;
 	// console.log('Foucused page Title: ', title);
 	const [contextData] = useContext(context);
 	const Navigate = useNavigate();
@@ -13,15 +13,15 @@ function FocusedPage() {
 		Navigate(-1);
 	};
 
-	console.log(
-		'FocusedPage context: ',
-		contextData.filter((item) => {
-			return articleId === item.id;
-		})
-	);
+	// console.log(
+	// 	'FocusedPage context: ',
+	// 	contextData.filter((item) => {
+	// 		return id === item.id;
+	// 	})
+	// );
 	return contextData
 		.filter((item) => {
-			return title === item.title;
+			return id === item.id;
 		})
 		.map((article) => {
 			return (

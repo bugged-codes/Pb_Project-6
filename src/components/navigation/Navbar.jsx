@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import '../../style/Navbar.css';
+import '../../style/Components.css';
 
 const Navbar = () => {
 	return (
@@ -33,7 +33,7 @@ const Navbar = () => {
 						</NavLink>
 					</li>
 					<li>
-						<NavLink to={'/Fashion'} className={({ isActive }) => (isActive ? 'active-nav' : 'nonActive-nav')}>
+						<NavLink to={'/Travel'} className={({ isActive }) => (isActive ? 'active-nav' : 'nonActive-nav')}>
 							Travel
 						</NavLink>
 					</li>

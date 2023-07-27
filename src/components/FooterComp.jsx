@@ -4,7 +4,7 @@ import '../style/Components.css';
 const FooterComp = () => {
 	return (
 		<div className="footer">
-			<center>This is footer.</center>
+			<center>&copy; bugged-codes.</center>
 		</div>
 	);
 };

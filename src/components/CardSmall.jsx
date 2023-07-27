@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const CardSmall = (props) => {
-	const { imgUrl, title, description, articleid } = props;
+	const { imgUrl, title, description, articleId } = props;
 	return (
-		<Link state={{ title: title, img: imgUrl, description: description, id: articleid }} to={`${articleid}`}>
+		<Link state={{ title: title, img: imgUrl, description: description, id: articleId }} to={`${articleId}`}>
 			<div className="card__small">
 				<div className="card__data">
 					<div className="smallCard__image">

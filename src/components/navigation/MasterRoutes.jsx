@@ -1,12 +1,12 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
+import DataContext from '../../data/DataContext';
 import Home from '../../pages/Home';
 import Bollywood from '../../pages/Bollywood';
 import Hollywood from '../../pages/Hollywood';
 import Technology from '../../pages/Technology';
 import Travel from '../../pages/Travel';
 import Food from '../../pages/Food';
-import DataContext from '../../data/DataContext';
 import FocusedPage from '../../pages/FocusedPage';
 
 const MasterRoutes = () => {
@@ -19,7 +19,7 @@ const MasterRoutes = () => {
 				<Route path="/Technology" element={<Technology />} />
 				<Route path="/Travel" element={<Travel />} />
 				<Route path="/Food" element={<Food />} />
-				<Route path=":category/:articleid" element={<FocusedPage />} />
+				<Route path=":category/:articleId" element={<FocusedPage />} />
 			</Routes>
 		</DataContext>
 	);
