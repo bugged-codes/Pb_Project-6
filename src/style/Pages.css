@@ -288,6 +288,11 @@ body img:hover {
 		height: initial;
 	}
 
+	#topPost-img-0 {
+		width: 6rem;
+		height: 6rem;
+	}
+
 	.topPost-title {
 		font-size: 3vw;
 		width: 100px;
@@ -299,5 +304,11 @@ body img:hover {
 
 	.topPost-flexVr {
 		justify-content: center;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.page-side-container {
+		display: none;
 	}
 }
