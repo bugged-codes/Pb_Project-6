@@ -40,8 +40,8 @@ body img:hover {
 }
 
 .home-grid-img {
-	width: 345px;
-	height: 190px;
+	width: 100%;
+	height: 100%;
 	border-radius: 10px;
 }
 
@@ -57,10 +57,10 @@ body img:hover {
 	grid-area: 3/4/3/5;
 }
 
-#home-grid-img-1 {
+/* #home-grid-img-1 {
 	width: 683px;
 	height: 390px;
-}
+} */
 
 #grid-heading-1 {
 	font-size: 2.5em;
@@ -151,4 +151,153 @@ body img:hover {
 .blog-info+p::first-letter {
 	text-transform: capitalize;
 	font-size: 1.4em;
+}
+
+@media only screen and (max-width:600px) {
+	.pages {
+		gap: 20px;
+	}
+
+	.nav-list {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.home-grid-container {
+		grid-template-columns: 42vw 42vw;
+		grid-template-rows: 10rem 10rem;
+		gap: 10px;
+		width: 90%;
+	}
+
+	#home-grid-div-1 {
+		grid-area: 1/1/1/3
+	}
+
+
+	#home-grid-div-2 {
+		grid-area: 2/1/3/2;
+	}
+
+	#home-grid-div-3 {
+		grid-area: 2/2/3/3;
+	}
+
+	.home-grid-container img {
+		height: 100%;
+		width: 100%;
+	}
+
+	#grid-heading-1 {
+		font-size: 1.4em;
+		position: relative;
+		bottom: 80px;
+		left: 1rem;
+	}
+
+	.home-grid-blogs-heading {
+		font-size: 1.1em;
+		left: 0;
+	}
+
+	.nav-list li {
+		flex: 0 1 20%;
+	}
+
+	.home-heading {
+		margin-top: 3rem;
+		font-size: 5vw;
+		margin-inline: 1.2rem;
+	}
+
+	.home-latest-flex-container {
+		flex-direction: column;
+		gap: 25px;
+	}
+
+	.home-latest-blogs {
+		flex-grow: 0;
+		flex-shrink: 1;
+		flex-basis: 0%;
+	}
+
+	.Mcard-container {
+		height: 400px;
+		width: 90%;
+		margin-inline: auto;
+	}
+
+	.Mcard-img img {
+		height: 200px;
+		width: 100%;
+		object-position: top;
+	}
+
+	.Mcard-data h2 {
+		font-size: 1.2em;
+	}
+
+	.cardBig-flexHr {
+		justify-content: center;
+		align-items: center;
+		gap: 20px;
+	}
+
+	.cardBig-img {
+		height: fit-content;
+		width: 8rem;
+	}
+
+	.cardBig-flexVr {
+		flex: 1 0 0%;
+	}
+
+	.focused-page {
+		margin: 50px 10%
+	}
+
+	.cardBig-title {
+		font-size: 4vw;
+	}
+
+	.page-main-container,
+	.page-side-container {
+		flex-grow: 1;
+		flex-shrink: 1;
+		flex-basis: 0%;
+	}
+
+	.topPost-flexHr {
+		flex-direction: row;
+		width: 100%;
+		gap: 15px;
+	}
+
+	.topPost-img-container {
+		flex: 1 1 0%;
+		width: fit-content;
+		flex-wrap: wrap;
+		display: flex;
+	}
+
+	#topPost-img-0,
+	topPost-img {
+		width: 100%;
+		aspect-ratio: 4/3;
+		height: initial;
+	}
+
+	.topPost-title {
+		font-size: 3vw;
+		width: 100px;
+	}
+
+	.topPost-descTags {
+		font-size: 2vw;
+	}
+
+	.topPost-flexVr {
+		justify-content: center;
+	}
 }
